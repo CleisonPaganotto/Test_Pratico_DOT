@@ -1,10 +1,13 @@
 describe('Validação do Fluxo de compra no Demoblaze', () => {
   beforeEach(() => {
     cy.login('test', 'test');
+    cy.wait(1000)
   });
 
   it('CT01 - Exibir produtos após login', () => {
     cy.get('.card-title').should('exist');
+    cy.wait(1000)
+
   });
 
   it('CT02 - Adicionar produto ao carrinho', () => {
@@ -13,6 +16,8 @@ describe('Validação do Fluxo de compra no Demoblaze', () => {
     cy.on('window:alert', (txt) => {
       expect(txt).to.contains('Product added');
     });
+    cy.wait(1000)
+
   });
 
   it('CT03 - Verificar produto no carrinho', () => {
@@ -20,6 +25,8 @@ describe('Validação do Fluxo de compra no Demoblaze', () => {
     cy.contains('Add to cart').click();
     cy.visit('https://www.demoblaze.com/cart.html');
     cy.contains('Samsung galaxy s6').should('be.visible');
+    cy.wait(1000)
+
   });
 
   it('CT04 - Finalizar compra com dados obrigatórios', () => {
@@ -32,6 +39,8 @@ describe('Validação do Fluxo de compra no Demoblaze', () => {
     cy.get('#month').type('05');
     cy.get('#year').type('2025');
     cy.contains('Purchase').click();
+    cy.wait(1000)
+
   });
 
   it('CT05 - Confirmar mensagem de compra', () => {
@@ -46,5 +55,7 @@ describe('Validação do Fluxo de compra no Demoblaze', () => {
     cy.contains('Purchase').click();
     cy.get('body > div.sweet-alert.showSweetAlert.visible').should('be.visible');
     cy.get('.confirm').click();
+    cy.wait(1000)
+
   });
 });
