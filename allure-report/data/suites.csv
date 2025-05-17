@@ -1,6 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","3825","CT03 - Verificar produto no carrinho","","Sat May 17 10:52:07 BRT 2025","passed","Sat May 17 10:52:11 BRT 2025","","Validação do Fluxo de compra no Demoblaze","",""
-"","3735","CT04 - Finalizar compra com dados obrigatórios","","Sat May 17 10:52:11 BRT 2025","passed","Sat May 17 10:52:14 BRT 2025","","Validação do Fluxo de compra no Demoblaze","",""
-"","2346","CT01 - Exibir produtos após login","","Sat May 17 10:52:01 BRT 2025","passed","Sat May 17 10:52:04 BRT 2025","","Validação do Fluxo de compra no Demoblaze","",""
-"","3167","CT02 - Adicionar produto ao carrinho","","Sat May 17 10:52:04 BRT 2025","passed","Sat May 17 10:52:07 BRT 2025","","Validação do Fluxo de compra no Demoblaze","",""
-"","3719","CT05 - Confirmar mensagem de compra","","Sat May 17 10:52:14 BRT 2025","passed","Sat May 17 10:52:18 BRT 2025","","Validação do Fluxo de compra no Demoblaze","",""
